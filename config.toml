@@ -1,0 +1,115 @@
+## Basic Configuration
+
+baseurl = "https://sdrobert.github.io"
+builddrafts = false
+canonifyurls = false
+languageCode = "en-CA"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Sean Robertson"
+title = "Sean Robertson"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+disqusShortname = "https-sdrobert-github-io" # Comment out to disable Disqus.
+googleAnalytics = "XYZ"
+enableRobotsTXT = true
+
+## Site Settings
+[params]
+author = "Sean Robertson"
+intro = "Ph.D. Candidate @ UofT in ASR"
+description = """
+I work on Automatic Speech Recognition.
+I am part of the [Computational Linguistics Group](https://www.cs.utoronto.ca/compling)
+at the University of Toronto. I am supervised by [Gerald Penn](https://www.cs.toronto.edu/~gpenn/).
+
+I have also begun working as a postdoc under [Ewan Dunbar](http://individual.utoronto.ca/ewan_dunbar/)
+in the [Department of French](https://www.french.utoronto.ca/), made possible
+by a fellowship with the [Data Sciences Institute](https://datasciences.utoronto.ca/).
+"""
+authorimage = "headshot.jpg"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "Personal homepage of Sean Robertson"
+keywords = "asr,phd,uoft,dsi"
+
+## Social Accounts
+[params.social]
+github = "sdrobert"
+# instagram = "<username>"
+# xing = "<username>"
+# linkedin = "<username>"
+# twitter = "<username>"
+# facebook = "<username>"
+# google = "<username>"
+googlescholar = "sdrobert"
+# stackoverflow = "<username>"
+# lastfm = "<username>"
+# goodreads = "<username>"
+# gitlab = "<username>"
+# bitbucket = "<username>"
+# fivehundredpx = "<username>"
+# flickr = "<username>"
+# foursquare = "<username>"
+# hackernews = "<username>"
+# kickstarter = "<username>"
+# patreon = "<username>"
+# pintrest = "<username>"
+# steam = "<username>"
+# reddit = "<username>"
+# snapchat = "<username>"
+# youtube = "<channelid>"
+# keybase = "<username>"
+# twitch = "<username>"
+# soundcloud = "<username>"
+# tumblr = "<username>"
+# strava = "<username>"
+# skype = "<username>"
+# telegram = "<username>"
+# whatsapp = "<username>"
+# buymeacoffee = "<username>"
+# kaggle = "<username>"
+# email = "you@example.com"
+# pgp = "<key_fingerprint>"
+
+## Extras
+[params.extra]
+copyright = "© 2022. Sean Robertson"
+poweredby = true
+highlightjs = true
+socialmarkup = false
+toc = false
+displayrssicon = false
+
+## Main Menu
+
+[[menu.main]]
+  name = "Resume"
+  url = "/resume-cv/sean_robertson_resume.pdf"
+
+[[menu.main]]
+  name = "Curriculum Vitae"
+  url = "/resume-cv/sean_robertson_cv.pdf"
+
+# [[menu.main]]
+#     name = "blog"
+#     weight = 100
+#     identifier = "blog"
+#     url = "/blog/"
+# [[menu.main]]
+#     name = "about"
+#     identifier = "about"
+#     weight = 200
+#     url = "/about/"
+# [[menu.main]]
+#     name = "coderag"
+#     identifier = "coderag"
+#     weight = 300
+#     url = "/coderag/"
