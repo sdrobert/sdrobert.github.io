@@ -1,6 +1,6 @@
-[submodule "themes\\hugo-goa"]
-	path = themes\\hugo-goa
+[submodule "themes/hugo-goa"]
+	path = themes/hugo-goa
 	url = https://github.com/shenoybr/hugo-goa
-[submodule "resume-cv"]
+[submodule "static/resume-cv"]
 	path = static/resume-cv
 	url = https://github.com/sdrobert/resume-cv.git
