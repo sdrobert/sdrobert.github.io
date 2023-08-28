@@ -22,15 +22,15 @@ enableRobotsTXT = true
 ## Site Settings
 [params]
 author = "Sean Robertson"
-intro = "Ph.D. Candidate @ UofT in ASR"
+intro = "Postdoctoral Fellow @ UofT in ASR"
 description = """
-I work on Automatic Speech Recognition.
-I am part of the [Computational Linguistics Group](https://www.cs.utoronto.ca/compling)
-at the University of Toronto. I am supervised by [Gerald Penn](https://www.cs.toronto.edu/~gpenn/).
-
-I have also begun working as a postdoc under [Ewan Dunbar](http://individual.utoronto.ca/ewan_dunbar/)
-in the [Department of French](https://www.french.utoronto.ca/), made possible
-by a fellowship with the [Data Sciences Institute](https://datasciences.utoronto.ca/).
+I work on Automatic Speech Recognition. I am supervised by
+[Ewan Dunbar](http://individual.utoronto.ca/ewan_dunbar/)
+and [Gerald Penn](https://www.cs.toronto.edu/~gpenn/) in the Departments of
+[French](https://www.french.utoronto.ca/)
+and [Computer Science](https://web.cs.toronto.edu/), made possible by a
+fellowship with the
+[Data Sciences Institute](https://datasciences.utoronto.ca/).
 """
 authorimage = "headshot.jpg"
 dateformat = "Jan 2, 2006"
@@ -81,7 +81,7 @@ googlescholar = "sdrobert"
 
 ## Extras
 [params.extra]
-copyright = "© 2022. Sean Robertson"
+copyright = "© 2022-2023. Sean Robertson"
 poweredby = true
 highlightjs = true
 socialmarkup = false
