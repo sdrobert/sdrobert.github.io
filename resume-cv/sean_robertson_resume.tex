@@ -8,38 +8,55 @@
 
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-% moderncv themes
-\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{orange}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
-% character encoding
-%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+% \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+% \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 % personal data
 \name{Sean}{Robertson}
-\title{PhD Student - Computational Linguistics - University of Toronto}  % optional, remove / comment the line if not wanted
-\address{6 King's College Rd., Rm 265C}{Toronto}{Ontario}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\title{Postdoctoral Researcher - Automatic Speech Recognition (ASR)}  % optional, remove / comment the line if not wanted
+% \address{6 King's College Rd., Rm 265C}{Toronto}{Ontario}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1 (647) 701 6206}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
 %\phone[fax]{+3~(456)~789~012}
-\email{sdrobert@cs.toronto.edu}                               % optional, remove / comment the line if not wanted
+\email{seandrobertson@outlook.com}                               % optional, remove / comment the line if not wanted
 \homepage{sdrobert.github.io}                         % optional, remove / comment the line if not wanted
-% \social[linkedin]{sdrobert}                        % optional, remove / comment the line if not wanted
+\social[linkedin]{sdrobert}                        % optional, remove / comment the line if not wanted
 %\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
 \social[github]{sdrobert}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+
+% \defbibenvironment{bibliography}
+%   {\list
+%      {\printtext[labelnumberwidth]{% label format from numeric.bbx
+%         \printfield{labelprefix}%
+%         \printfield{labelnumber}}}
+%      {\setlength{\topsep}{0pt}% layout parameters from moderncvstyleclassic.sty
+%       \setlength{\labelwidth}{\hintscolumnwidth}%
+%       \setlength{\labelsep}{\separatorcolumnwidth}%
+%       \leftmargin\labelwidth%
+%       \advance\leftmargin\labelsep}%
+%       \sloppy\clubpenalty4000\widowpenalty4000}
+%   {\endlist}
+%   {\item}
+
+% % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
 %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 %\makeatother
@@ -57,27 +74,130 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2022--pres}{Postdoctoral Fellowship}{University of Toronto}{}{}{
-  Speech recognition; pre-training; low-resource languages.
-}
-\cventry{2016--2023}{PhD in Computer Science}{University of Toronto}{}{}{
-  Speech recognition; deep learning; digital signal processing. Convocation Nov.~2023.
-}
-\cventry{2013--2015}{MSc in Computer Science}{University of Toronto}{}{}{
-  Computer-assisted pronunciation training; speech recognition; digital signal processing.
-}  % arguments 3 to 6 can be left empty
-\cventry{2008--2013}{BCS Hons, co-op}{Univeristy of Waterloo}{}{}{}
+\cventry{2022--pres}{Postdoctoral Fellowship}{University of Toronto/Data Sciences Institute}{}{}{%
+  \begin{itemize}%
+    \item Developed customizable \textbf{PyTorch} package with \textbf{AWS} and
+          \textbf{SLURM} integration to train and probe the degree to which
+          temporal context impacts downstream performance of
+          \textbf{self-supervised} ASR
+          (\httplink[\githubsocialsymbol scpc]{github.com/sdrobert/scpc}).%
+    \item Mentored undergraduate researchers in the development of a
+          speech benchmark for a \textbf{low-resource language}.%
+    \item Actively developing specialized benchmarks and diagnostics for
+          teasing apart the impact of \textbf{accent} on state-of-the-art
+          ASR performance.%
+  \end{itemize}%
+}%
+\cventry{2016--2023}{PhD in Computer Science}{University of Toronto}{}{}{%
+  \begin{itemize}%
+    \item Taxonomized existing and derived new methods for
+          \textbf{sequence-to-sequence transduction} in ASR, utilizing
+          \textbf{Adaptive Monte Carlo} techniques
+          (\httplink[\githubsocialsymbol
+          conditional-bernoulli]{github.com/sdrobert/conditional-bernoulli}).%
+    \item Discovered and implemented a brand-new neural network layer in
+          \textbf{C++/CUDA} for ASR, trained on \textbf{Azure ML} clusters
+          (\httplink[\githubsocialsymbol
+          cnn-mellin]{github.com/sdrobert/cnn-mellin}).%
+    \item Experimented with a variety of feature front-ends for both
+          \textbf{end-to-end} and \textbf{hybrid} ASR
+          (\httplink[\githubsocialsymbol
+          more-or-let]{github.com/sdrobert/more-or-let}), implementing
+          a variety of \textbf{Digital Signal Processing} algorithms in
+          \textbf{Python} (\httplink[\githubsocialsymbol
+          pydrobert-speech]{github.com/sdrobert/pydrobert-speech}).%
+  \end{itemize}%
+}%
+\cventry{2013--2015}{MSc in Computer Science}{University of Toronto}{}{}{%
+  \begin{itemize}%
+    \item Performed \textbf{human-subjects experiments} to measure the efficacy
+          of state-of-the-art \textbf{Computer-Assisted Pronunciation Training}
+          algorithms in ecologically valid settings.%
+    \item Deployed \textbf{mispronunciation detection} algorithms for beginner
+          learners of French.%
+  \end{itemize}%
+}%
+\cventry{2008--2013}{BCS Hons., co-op}{Univeristy of Waterloo}{}{}{}%
 
 \section{Experience}
-\cventry{2020}{AI Engineer}{Sun Life Financial}{}{}{}
-\cventry{2014--2018}{Contract Work}{Speax Inc.}{}{}{Speech recognition for mobile app.}
-\cventry{2012}{Undergraduate Research Assistant}{University of Waterloo}{}{}{Human-Computer Interaction lab.}
-\cventry{2012}{Undergraduate Research Assistant}{University of Waterloo}{}{}{Artificial Intelligence lab.}
-\cventry{2011}{Undergraduate Research Assistant}{University of Waterloo}{}{}{Databases lab.}
+\cventry{2022}{Conversational AI Project Consultant and Teaching Assistant}{Vector Institute}{}{}{%
+  \begin{itemize}
+    \item Delivered tutorials on the state of speech technologies to industry
+          partners.%
+    \item Provided consultation to industry partners to support their ongoing
+          applied \textbf{Natural Language Processing} projects.%
+  \end{itemize}
+}
+\cventry{2020}{AI Engineer}{Sun Life Financial}{}{}{%
+  Developed training materials, evaluations, and systems for internal ASR
+  systems.%
+}%
+\cventry{2014--2018}{Contract Work}{Speax Inc.}{}{}{%
+  \begin{itemize}
+    \item Responsible for designing, developing, maintaining, and integrating
+          the ASR backend of a \textbf{language learning} mobile app.%
+    \item Offered continual feedback on the development of the main gameplay
+          loop with respect to the capabilities of the ASR system.%
+    \item Received press coverage in CBC's ``The
+          National'' (\httplink[\faLink~link]{www.cbc.ca/player/play/1418433091867}).%
+  \end{itemize}%
+}
+
+\pagebreak
+% \cventry{2012}{Undergraduate Research Assistant}{University of Waterloo}{}{}{Human-Computer Interaction lab.}
+% \cventry{2012}{Undergraduate Research Assistant}{University of Waterloo}{}{}{Artificial Intelligence lab.}
+% \cventry{2011}{Undergraduate Research Assistant}{University of Waterloo}{}{}{Databases lab.}
 % \cventry{2010}{Software Developer Co-op}{Sybase iAnywhere}{Waterloo}{}{}
 
+\section{Refereed Publications}
+\begin{itemize}
+  \item \textbf{Robertson, S.,} Munteanu, C., Penn, G. (2020).
+    \textit{FAB: The French Absolute Beginner Corpus for Pronunciation
+    Training}. Language Resources and Evaluation Conference (LREC). 6613-6620
 
-\section{Awards}
+  \item \textbf{Robertson, S.,} Penn, G., Wang, Y. (2019).
+    \textit{Improving Speech Recognition with Drop-in Replacements for f-bank
+    Features}. Conference on Statistical Language And Speech Processing
+    (SLSP). 210-222
+
+  \item \textbf{Robertson, S.,} Munteanu, C., Penn, G. (2018).
+    \textit{Designing Pronunciation Learning Tools: The Case for Interactivity
+    against Over-Engineering}. Conference on Human Factors in Computing Systems
+    (CHI). 356:1-356:13.
+
+  \item \textbf{Robertson, S.,} Munteanu, C., Penn, G. (2016).
+    \textit{Pronunciation Error Detection for New Language Learners}.
+    Interspeech, 2691-2695.
+
+  \item Rudzicz, F., Frydenlund, A., \textbf{Robertson, S.,} Thaine, P. (2016).
+    \textit{Acoustic-Articulatory Relationships and Inversion in Sum-Product
+    and Deep-Belief Networks}. Speech Communication, 79, 61-73.
+\end{itemize}
+
+
+\section{Workshop Proceedings and Non-Refereed Papers}
+\begin{itemize}
+  \item \textbf{Robertson, S.,} Penn, G., Wang, Y. (2019) \textit{Exploring
+    Spectro-Temporal Features in End-to-End Convolutional Neural Networks}.
+    arXiv preprint, \texttt{arXiv:1901.00072}.
+
+  \item \textbf{Robertson, S.,} Munteanu, C., Penn, G. (2016).
+    \textit{Language Learning Dialogue systems: Lessons in Proving Yourself}.
+    Designing Speech and Multimodal Interactions for Mobile, Wearable, and
+    Pervasive Applications, CHI.
+
+  \item Minhas, U. F., Liu, R., Aboulnaga, A., Salem, K., Ng, J.,
+    \textbf{Robertson, S.} (2012). \textit{Elastic Scale-Out for
+    Partition-Based Database Systems}. IEEE 28th International Conference on
+    Data Engineering Workshops (ICDEW), 281-288.
+\end{itemize}
+
+
+% \nocite{*}
+% \bibliographystyle{plainyr-rev}
+% \bibliography{\jobname}
+
+\section{Awards and Affiliations}
 \cventry{2023}{Vector Faculty Affiliate Researcher}{Vector Institute}{}{}{}
 \cventry{2022--2023}{Postdoctoral Fellowship}{Data Sciences Institute}{}{}{}
 \cventry{2018--2019, 2021--2022}{Vector Postgraduate Affiliate}{Vector Institute}{}{}{}
@@ -90,9 +210,9 @@
 %\cvitem{supervisors}{Supervisors}
 %\cvitem{description}{Short thesis abstract}
 
-\section{Skills}
-\cvdoubleitem{}{Speech Recognition}{}{Machine Learning}
-\cvdoubleitem{}{PyTorch}{}{Kaldi}
+% \section{Skills}
+% \cvdoubleitem{}{Speech Recognition}{}{Machine Learning}
+% \cvdoubleitem{}{PyTorch}{}{Kaldi}
 % \cvdoubleitem{}{Kaldi}{}{PyTorch}
 % \cvdoubleitem{}{Digital Signal Processing}{}{Bash}
 
