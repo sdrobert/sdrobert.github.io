@@ -22,14 +22,15 @@ enableRobotsTXT = true
 ## Site Settings
 [params]
 author = "Sean Robertson"
-intro = "Senior Researcher @ Huawei Canada"
+intro = "Research Scientist @ Otter.ai"
 description = """
 I have a Ph.D. in Automatic Speech Recognition.
 
-I work in Huawei Canada's Human Machine Interaction lab as of June, 2024,
-focusing on R&D of consumer technologies involving speech processing.
+I work at Otter.ai, making your meetings easier to handle with automated
+meeting minutes and voice assistants.
 
-Previously I was a post-doc, supervised by
+Previously I was a Senior Researcher at Huawei Canada's Human Machine Interaction Lab.
+Prior to that, I was a post-doc, supervised by
 [Ewan Dunbar](http://individual.utoronto.ca/ewan_dunbar/)
 and [Gerald Penn](https://www.cs.toronto.edu/~gpenn/) in the Departments of
 [French](https://www.french.utoronto.ca/)
