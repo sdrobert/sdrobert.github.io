@@ -27,7 +27,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 % personal data
 \name{Sean}{Robertson}
-\title{Senior Researcher in speech processing}  % optional, remove / comment the line if not wanted
+\title{Research scientist in speech processing}  % optional, remove / comment the line if not wanted
 % \address{6 King's College Rd., Rm 265C}{Toronto}{Ontario}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1 (647) 701 6206}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
@@ -73,16 +73,38 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
+\section{Experience}
+\cventry{2025--pres}{Research Scientist}{Otter.ai}{}{}{%
+  Speech processing research and development for meeting transcription \&
+  assistant software.
+}
+\cventry{2024--2025}{Senior Researcher}{Huawei Canada}{}{}{%
+  Researched and developed prototype consumer technologies involving
+  \textbf{speech enhancement}, \textbf{speech recognition},
+  and \textbf{large language models}.%
+}
+\cventry{2022}{Conversational AI Project Consultant and TA}{Vector Institute}{}{}{%
+  Provided consultation and delivered tutorials to industry partners in their
+  ongoing \textbf{Natural Language Processing} projects.%
+}
+\cventry{2020}{AI Engineer}{Sun Life Financial}{}{}{%
+  Developed training materials, evaluations, and systems for internal ASR
+  systems.%
+}%
+\cventry{2014--2018}{Contract Work}{Speax Inc.}{}{}{%
+  Responsible for designing, developing, maintaining, and integrating
+  the ASR backend of a \textbf{language learning} mobile app.%
+}
+
 \section{Education}
 \cventry{2022--2024}{Postdoctoral Fellowship}{University of Toronto/Data Sciences Institute}{}{}{%
   \begin{itemize}%
-    \item Developed customizable \textbf{PyTorch} package with \textbf{AWS} and
-          \textbf{SLURM} integration to train and probe the degree to which
-          temporal context impacts downstream performance of
-          \textbf{self-supervised} ASR
+    \item Developed customizable \textbf{PyTorch} package for
+          training and evaluating \textbf{speech foudnation models}
           (\httplink[\githubsocialsymbol scpc]{github.com/sdrobert/scpc}).%
     \item Mentored undergraduate researchers in the development of a
-          speech benchmark for a \textbf{low-resource language}.%
+          speech benchmark for a \textbf{low-resource language}.
+          (\httplink[\githubsocialsymbol faetar-dev-kit]{https://github.com/perceptimatic/faetar-dev-kit}).%
     \item Quantified the role of \textbf{language models} in speech recognition
           performance.%
   \end{itemize}%
@@ -118,23 +140,6 @@
 }%
 \cventry{2008--2013}{BCS Hons., co-op}{Univeristy of Waterloo}{}{}{}%
 
-\section{Experience}
-\cventry{2024--pres}{Senior Researcher}{Huawei Canada}{}{}{%
-  Researching and developing prototype consumer technologies involving
-  \textbf{speech processing} and \textbf{machine learning}.%
-}
-\cventry{2022}{Conversational AI Project Consultant and Teaching Assistant}{Vector Institute}{}{}{%
-  Provided consultation and delivered tutorials to industry partners in their
-  ongoing \textbf{Natural Language Processing} projects.%
-}
-\cventry{2020}{AI Engineer}{Sun Life Financial}{}{}{%
-  Developed training materials, evaluations, and systems for internal ASR
-  systems.%
-}%
-\cventry{2014--2018}{Contract Work}{Speax Inc.}{}{}{%
-  Responsible for designing, developing, maintaining, and integrating
-  the ASR backend of a \textbf{language learning} mobile app.%
-}
 
 \pagebreak
 % \cventry{2012}{Undergraduate Research Assistant}{University of Waterloo}{}{}{Human-Computer Interaction lab.}
@@ -144,6 +149,10 @@
 
 \section{Refereed Publications}
 \begin{itemize}
+  \item Ong, M., \textbf{Robertson, S.,} Peckham, L., de Aberasturi, A.J.J.,
+    Arkhangorodsky, P., Huo, R., Sakhardande, A., Hallap, M., Nagy, N., Dunbar, E. (2025).
+    \textit{The Faetar Speech Recognition Benchmark}. Interspeech. To appear
+    
   \item \textbf{Robertson, S.,} Penn, G., Dunbar, E. (2024).
     \textit{Quantifying the Role of Textual Predictability in Automatic Speech
     Recognition}. Interspeech. 4029-4033
